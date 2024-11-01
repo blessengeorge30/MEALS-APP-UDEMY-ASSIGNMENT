@@ -1,16 +1,28 @@
-import { View, Text, Pressable, StyleSheet, Image, Platform } from "react-native"
+import {
+    View,
+    Text,
+    Pressable,
+    StyleSheet,
+    Image,
+    Platform
+} from "react-native"
 import { useNavigation } from "@react-navigation/native";
 
-function MealItem({ id,title, imageUrl, duration, complexity, affordability }) {
+function MealItem({ id, title, imageUrl, duration, complexity, affordability }) {
     const navigation = useNavigation();
 
-    navigation.navigate('MealsDetailedScreen', { 
+    function selectMealItemHandler() {
+      navigation.navigate('MealsDetailedScreen', {
         mealId: id
-    })
+    })   
+    } 
+
+   
 
     return <View style={styles.mealitems}>
-        <Pressable android_ripple={{color: "#ccc"}} style={({ pressed }) =>  (pressed ? styles.buttonPressed : null)}>
-            <View style= {styles.innerContainer}>
+        <Pressable android_ripple={{ color: "#ccc" }} 
+        style={({ pressed }) => (pressed ? styles.buttonPressed : null)} onPress={selectMealItemHandler}>
+            <View style={styles.innerContainer}>
                 <View>
                     <Image source={{ uri: imageUrl }} style={styles.image} />
                     <Text style={styles.title}>{title}</Text>
@@ -21,7 +33,7 @@ function MealItem({ id,title, imageUrl, duration, complexity, affordability }) {
                     <Text style={styles.detailitems}>{affordability.toUpperCase()}</Text>
                 </View>
             </View>
-     </Pressable>
+        </Pressable>
     </View>
 }
 
@@ -42,12 +54,12 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 200,
     },
-    innerContainer:{
-        borderRadius:8,
+    innerContainer: {
+        borderRadius: 8,
         overflow: "hidden"
 
     },
-    buttonPressed:{
+    buttonPressed: {
         opacity: 0.5,
     },
     title: {
