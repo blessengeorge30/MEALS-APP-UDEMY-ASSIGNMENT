@@ -1,12 +1,20 @@
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Image } from "react-native";
+import { MEALS } from "../data/dummy-data";
 
-function MealsDetailedScreen({route}) {
+function MealsDetailedScreen({ route }) {
     const mealId = route.params.mealId;
+
+    const selectMeal = MEALS.find((meal) => meal.id === mealId);
+
     return (
         <View>
+            <Image />
+            <Text> </Text>
+            <View></View>
             <Text>
-                Meals Detailed Screen
+                Ingredients
             </Text>
+            <Text>Steps</Text>
         </View>
     )
 
