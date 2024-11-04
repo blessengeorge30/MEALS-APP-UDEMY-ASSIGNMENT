@@ -8,6 +8,6 @@
  
 
 ##  Screenshots
-![App Screenshot](./screenshots/overview.png)
+![App Screenshot](./screenshots/Overview.png)
 
 
