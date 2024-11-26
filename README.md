@@ -14,12 +14,6 @@ This is a simple Meals application built using React Native. The app allows user
 
 
 
-
- 
-
-
-
-
 ##  Screenshots
 ![App Screenshot](./screenshots/Overview(1).png)
 ![App Screenshot](./screenshots/Overview(2).png)
