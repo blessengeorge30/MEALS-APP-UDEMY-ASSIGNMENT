@@ -9,6 +9,23 @@ This is a simple Meals application built using React Native. The app allows user
 - View details of specific meals
 - Add meals to favorites
 - Responsive UI for mobile devices
+
+
+
+
+
+
+ 
+
+
+
+
+##  Screenshots
+![App Screenshot](./screenshots/Overview(1).png)
+![App Screenshot](./screenshots/Overview(2).png)
+
+
+
 # 🛠️ Packages Used
 The following packages were used to build the application:
 
@@ -25,16 +42,3 @@ Navigation
 - react-native-reanimated: Smooth animations for transitions.
 - react-native-vector-icons: Icons for navigation and UI.
 State Management
-
-
-
-
-
- 
-
-
-
-
-##  Screenshots
-![App Screenshot](./screenshots/Overview(1).png)
-![App Screenshot](./screenshots/Overview(2).png)
